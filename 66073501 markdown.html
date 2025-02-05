@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body style="font-size: x-large;">
+    <h1>66073501 Markdown Example</h1>
+    <div id="output"></div>
+    <script>
+        var data = `
+1. ordered list
+2. ## Heading 1
+3. ### Heading 2
+4. #### Heading 3
+5. **Bold Text**
+6. *Italic Text*
+7. ***Bold Italic Text***
+8. [Google Link](https://google.com)
+9. ![image](https://mdg.imgix.net/assets/images/shiprock.jpg?auto=format&fit=clip&q=40&w=200) 
+- unordered list
+        `;
+        document.getElementById("output").innerHTML = marked.parse(data);
+    </script>
+</body>
+</html>
